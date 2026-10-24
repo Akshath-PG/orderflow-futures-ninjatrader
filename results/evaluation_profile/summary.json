@@ -1,0 +1,48 @@
+{
+  "outcome": "PASSED",
+  "profile": "evaluation",
+  "trading_days_to_pass": 5,
+  "start_balance": 50000.0,
+  "end_balance": 53036.8,
+  "net_pnl": 3036.8,
+  "net_pct": 6.07,
+  "firm_rules": {
+    "drawdown": "$2000 intraday_trailing",
+    "final_drawdown_floor": 50000.0,
+    "room_left_above_floor": 3036.8,
+    "daily_loss_allowed_by_bot": 800.0,
+    "daily_profit_cap": 1350.0,
+    "profit_target": 3000.0,
+    "contract_cap": 15
+  },
+  "best_day": 1343.6,
+  "best_day_pct_of_target": 44.8,
+  "best_day_pct_of_total_profit": 44.2,
+  "trades": 8,
+  "trading_days": 5,
+  "win_rate_pct": 100.0,
+  "profit_factor": null,
+  "avg_win": 379.6,
+  "avg_loss": 0,
+  "expectancy_per_trade": 379.6,
+  "max_drawdown_closed": 0.0,
+  "max_drawdown_equity": 406.9,
+  "longs": 5,
+  "shorts": 3,
+  "exit_reasons": {
+    "tp2": 5,
+    "flow_reversal": 1,
+    "daily_cap": 1,
+    "target": 1
+  },
+  "signals": 8,
+  "skipped_too_small_account": 0,
+  "ticks_processed": 1302939,
+  "large_prints_detected": 10587,
+  "data_from": "2026-06-01 12:00:00 UTC",
+  "data_to": "2026-06-30 19:59:59 UTC",
+  "risk_events": [
+    "2026-06-04 16:43:51 UTC  DAILY PROFIT CAP 1354.70 >= 1350 (consistency) - done for today",
+    "2026-06-05 12:39:32 UTC  PROFIT TARGET reached at equity 53064.55 - evaluation passed"
+  ]
+}

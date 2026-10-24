@@ -1,0 +1,65 @@
+config.toml | p_informed=0.55 | 22 trading days per run
+  seed  1  PASSED          net   +3036.8  trades   8  WR 100.0%  max DD   406.9  passed in 5 trading days
+  seed  2  PASSED          net   +3034.5  trades  54  WR  63.0%  max DD  1515.7  passed in 17 trading days
+  seed  3  STILL RUNNING   net   +2109.9  trades  64  WR  54.7%  max DD  1743.1  
+  seed  4  PASSED          net   +3050.6  trades  51  WR  58.8%  max DD   949.7  passed in 22 trading days
+  seed  5  STILL RUNNING   net   +1220.5  trades  58  WR  55.2%  max DD  1678.4  
+  seed  6  PASSED          net   +3050.8  trades  27  WR  66.7%  max DD   532.8  passed in 9 trading days
+  seed  7  STILL RUNNING   net   +2212.5  trades  55  WR  58.2%  max DD  1291.0  
+  seed  8  PASSED          net   +3042.1  trades  59  WR  62.7%  max DD   987.9  passed in 20 trading days
+  seed  9  PASSED          net   +3043.2  trades  45  WR  57.8%  max DD   982.3  passed in 20 trading days
+  seed 10  PASSED          net   +3046.9  trades  15  WR  86.7%  max DD   466.1  passed in 5 trading days
+PASSED: 7
+DRAWDOWN_GUARD: 0
+STILL RUNNING: 3
+days to pass: fastest 5, median 17, slowest 22
+return over the run: median +6.08%, worst +2.44%, months >= +2%: 10/10
+
+config.toml | p_informed=0.0 | 22 trading days per run
+  seed  1  STILL RUNNING   net    -939.0  trades  60  WR  45.0%  max DD  1599.1  
+  seed  2  STILL RUNNING   net   -1458.8  trades  56  WR  37.5%  max DD  1576.1  
+  seed  3  STILL RUNNING   net   -1242.8  trades  35  WR  31.4%  max DD  1640.0  
+  seed  4  STILL RUNNING   net   -1635.4  trades  55  WR  36.4%  max DD  1635.4  
+  seed  5  STILL RUNNING   net    +330.3  trades  65  WR  50.8%  max DD  1512.4  
+  seed  6  STILL RUNNING   net   -1557.2  trades  49  WR  42.9%  max DD  1557.2  
+  seed  7  STILL RUNNING   net   -1535.2  trades  44  WR  38.6%  max DD  1586.7  
+  seed  8  STILL RUNNING   net   -1586.0  trades  58  WR  43.1%  max DD  1586.0  
+  seed  9  STILL RUNNING   net    -332.2  trades  64  WR  50.0%  max DD  1538.2  
+  seed 10  STILL RUNNING   net    -984.9  trades  48  WR  54.2%  max DD  1268.7  
+PASSED: 0
+DRAWDOWN_GUARD: 0
+STILL RUNNING: 10
+return over the run: median -2.49%, worst -3.27%, months >= +2%: 0/10
+
+config_funded.toml | p_informed=0.55 | 22 trading days per run
+  seed  1  STILL RUNNING   net   +3759.9  trades  54  WR  72.2%  max DD   501.8  
+  seed  2  STILL RUNNING   net   +2255.0  trades  57  WR  66.7%  max DD   570.7  
+  seed  3  STILL RUNNING   net   +1026.3  trades  50  WR  56.0%  max DD   691.9  
+  seed  4  STILL RUNNING   net   +1503.0  trades  50  WR  58.0%  max DD   425.4  
+  seed  5  STILL RUNNING   net    +392.6  trades  45  WR  53.3%  max DD   363.7  
+  seed  6  STILL RUNNING   net   +2761.2  trades  63  WR  69.8%  max DD   298.0  
+  seed  7  STILL RUNNING   net   +1037.9  trades  48  WR  58.3%  max DD   626.3  
+  seed  8  STILL RUNNING   net    +816.7  trades  44  WR  56.8%  max DD   407.7  
+  seed  9  STILL RUNNING   net   +1757.0  trades  45  WR  64.4%  max DD   300.1  
+  seed 10  STILL RUNNING   net   +2101.7  trades  64  WR  68.8%  max DD   400.9  
+PASSED: 0
+DRAWDOWN_GUARD: 0
+STILL RUNNING: 10
+return over the run: median +3.51%, worst +0.79%, months >= +2%: 8/10
+
+config_funded.toml | p_informed=0.0 | 22 trading days per run
+  seed  1  STILL RUNNING   net    -735.9  trades  56  WR  42.9%  max DD  1042.0  
+  seed  2  STILL RUNNING   net    -880.1  trades  51  WR  39.2%  max DD   948.0  
+  seed  3  STILL RUNNING   net    -759.8  trades  38  WR  34.2%  max DD   918.7  
+  seed  4  STILL RUNNING   net    -725.0  trades  40  WR  37.5%  max DD   852.4  
+  seed  5  STILL RUNNING   net    +551.8  trades  47  WR  53.2%  max DD   433.9  
+  seed  6  STILL RUNNING   net    -697.0  trades  42  WR  45.2%  max DD   853.8  
+  seed  7  STILL RUNNING   net    -928.7  trades  40  WR  37.5%  max DD   949.3  
+  seed  8  STILL RUNNING   net   -1039.5  trades  61  WR  39.3%  max DD  1039.5  
+  seed  9  STILL RUNNING   net     -25.1  trades  45  WR  53.3%  max DD   699.6  
+  seed 10  STILL RUNNING   net    +112.7  trades  33  WR  51.5%  max DD   615.4  
+PASSED: 0
+DRAWDOWN_GUARD: 0
+STILL RUNNING: 10
+return over the run: median -1.45%, worst -2.08%, months >= +2%: 0/10
+

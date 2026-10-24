@@ -1,0 +1,4 @@
+numpy
+matplotlib
+tzdata      # US Eastern time zone data on Windows
+databento   # real CME data: backtests and live paper trading
