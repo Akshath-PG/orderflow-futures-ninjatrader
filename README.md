@@ -82,6 +82,24 @@ python paper_trade.py                                        # live tape, simula
 ```
 Data exported from NinjaTrader: `python run_backtest.py --data orderflow_MGC_....csv`
 
+## Real-data backtest, March to today (MT5-style reports)
+
+```
+pip install -r requirements.txt
+set DATABENTO_API_KEY=db-xxxxxxxx            # new Databento accounts get free credit
+python run_real_backtest.py --start 2026-03-01           # shows the cost per month, downloads nothing
+python run_real_backtest.py --start 2026-03-01 --yes     # downloads GC trades month by month and runs
+```
+Or with data exported from NinjaTrader (`OrderFlowTickExporter`, GC or MGC, 1-tick, Tick Replay on):
+```
+python run_real_backtest.py --files "orderflow_*.csv" --start 2026-03-01
+```
+Writes `reports/<date>/`: `funded_continuous.html` (funded profile through the whole period),
+`challenge_attempts.html` (a fresh evaluation started on the 1st of each month, up to 45 days each)
+and one full report per attempt. Each report has the MT5 tester layout: settings, results,
+drawdowns, trade statistics, balance/equity chart, monthly and hourly breakdowns, prop-firm
+rule events and the full deals list.
+
 ## Read this before trusting any number
 
 Everything in `results/` comes from a **synthetic** tape with a planted edge. It
